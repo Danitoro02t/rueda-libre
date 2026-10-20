@@ -1,0 +1,48 @@
+==================================================
+BITÁCORA DE DESARROLLO - RUEDA LIBRE
+==================================================
+
+Punto 1 y 2: Configuración del proyecto
+- Se creó la carpeta del proyecto "rueda-libre" y se inicializo el repositorio con git init
+- Conecté el repo con GitHub en un repositorio público con el mismo nombre
+- Estructura de archivos creada correctamente:
+    /rueda-libre
+    ├── index.html
+    ├── bitacora.txt
+    ├── /paginas
+    └── /img (aquí guardé la foto del logo para el siguiente reto)
+
+Punto 3: Estructura base de HTML
+- Cree la estructura básica de index.html agregando la declaración <!DOCTYPE html>, idioma español (lang="es"), UTF-8 para caracteres, el viewport para móviles y la meta descripción enfocada en el alquiler de bicis
+- Título asignado: "Rueda Libre | Alquiler de bicicletas en Medellín"
+- En el body coloqué el h1 con el nombre del negocio y un párrafo de bienvenida para los usuarios
+
+Punto 4: Inspección de red con Live Server (DevTools)
+Al levantar la página con Live Server y recargar la pestaña Network, seleccioné la petición del documento principal (index.html) y registre los siguientes datos:
+
+- URL completa: http://127.0.0.1:5500/index.html
+- Protocolo: http:
+- Host: 127.0.0.1
+- Puerto: 5500
+- Ruta: /index.html
+- Método: GET
+- Código de estado: 304 Not Modified (significa que la página no ha cambiado desde la última carga y la trajo de la caché del navegador)
+
+Punto 5: Prueba de ruta inexistente y roles de tecnologías
+- Escribí en el navegador la ruta inexistente: http://127.0.0.1:5500/promociones.html
+- Código recibido: Cannot GET /promociones.html
+- Significado: El servidor responde con Cannot GET cuando la ruta o el archivo que estamos intentando buscar no existe o no se puede encontrar 
+
+
+Punto 6: Roles de HTML, CSS y JavaScript en el sitio de Rueda Libre:
+
+* HTML: Es la estructura base y el esqueleto de la pagina, se encarga de definir qué contenido y elementos se muestran en pantalla.
+  - Ejemplo concreto: La etiqueta <h1>Rueda Libre</h1>, el párrafo descriptivo y la lista desordenada con los servicios de alquiler y recorridos guiados
+
+* CSS: Se encarga del diseño visual, los colores, las fuentes y la presentación para que el sitio se vea ordenado y atractivo.
+  - Ejemplo concreto: El archivo styles.css que le da el fondo verde oscuro corporativo al encabezado y estiliza las cajas de contenido
+
+* JavaScript: Le aporta la interactividad y la lógica dinámica para que reaccione a las acciones del usuario directamente en el navegador.
+  - Ejemplo concreto: El script que vinculamos al final del body para que al hacer clic en la sección de reservas aparezca una alerta interactiva guiando al usuario
+
+  Punto 7: Se uso el git commit con el siguiente mensaje: git commit -m "Mi primer commit para este proyecto"
